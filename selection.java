@@ -3,11 +3,11 @@ class Selection{
     {
         int i,j,min,ind,swap;
         int[] a = {34,21,67,48,93};
-        for(i=0;i<3;i++)
+        for(i=0;i<4;i++)
          {
             ind = i;
             min = a[i];
-            for(j=1;j<3;j++)
+            for(j=i+1;j<5;j++)
             {
                 if(a[j]<min)
                 {
