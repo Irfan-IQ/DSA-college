@@ -24,12 +24,13 @@ int main()
                 min = a[j];
                 ind = j;
             }
-            if(a[i] != min)
+            
+        }
+        if(a[i] != min)
             {
                 a[i] = min;
 
             }
-        }
 
     }
     cout<<"Sorted Array"<<endl;
