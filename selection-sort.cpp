@@ -3,7 +3,7 @@ using namespace std;
 
 int main()
 {
-    int i,j,min,ind,n;
+    int i,j,min,ind,n,swap;
     cout<<"Enter total number of elements in the array"<<endl;
     cin>>n;
     int a[n];
@@ -28,8 +28,10 @@ int main()
         }
         if(a[i] != min)
             {
-                a[i] = min;
-
+                 swap = a[i];
+                 a[i] = a[ind];
+                 a[ind] = swap;
+   
             }
 
     }
