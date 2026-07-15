@@ -9,14 +9,15 @@ int main()
     int a[n];
 
     cout<<"Enter the elements in the array"<<endl;
-    for(i=0;i<n;i++)
+    for(i=0;i<n-1;i++)
     {
         cin>>a[i];
     }
+
     for(i=0;i<n-1;i++)
     {
-        ind = i;
         min = a[i];
+        ind = i;
         for(j=i+1;j<n;j++)
         {
             if(a[j]<min)
@@ -24,16 +25,13 @@ int main()
                 min = a[j];
                 ind = j;
             }
-            
         }
         if(a[i] != min)
-            {
-                 swap = a[i];
-                 a[i] = a[ind];
-                 a[ind] = swap;
-   
-            }
-
+        {
+            swap = a[i];
+            a[i] = a[ind];
+            a[ind] = swap;
+        }
     }
     cout<<"Sorted Array"<<endl;
     for(i=0;i<n;i++)
