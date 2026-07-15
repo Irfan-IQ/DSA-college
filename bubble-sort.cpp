@@ -12,7 +12,7 @@ int main(){
         cin>>a[i];
 
     }
-    for(i=n-1;i>0;i--)
+    for(i=n;i>0;i--)
     {
         for(j=0;j<i-1;j++)
         {
